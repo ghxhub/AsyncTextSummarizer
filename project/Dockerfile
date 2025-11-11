@@ -4,7 +4,7 @@ FROM python:3.11-slim-bookworm
 
 # set work directory
 RUN mkdir -p /usr/src/app
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -16,4 +16,4 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # add app
-COPY app/ ./app/
+COPY . .
