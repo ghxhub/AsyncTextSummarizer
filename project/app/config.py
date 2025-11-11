@@ -3,8 +3,7 @@
 
 import logging
 from functools import lru_cache
-# from pydantic_settings import BaseSettings
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
 import os
 
 log = logging.getLogger("uvicorn")
